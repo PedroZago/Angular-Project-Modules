@@ -1,0 +1,17 @@
+button,
+#display {
+  width: 100%;
+}
+
+.card-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.container-fluid {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}

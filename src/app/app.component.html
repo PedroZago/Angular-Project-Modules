@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Projeto final</a>
+    <a class="navbar-brand" [routerLink]="['/dashboard']">Projeto final</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
       aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Inicial</a>
+          <a class="nav-link" [routerLink]="['/dashboard']">Inicial</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -17,22 +17,22 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item" href="#">Dashboard</a>
+              <a class="dropdown-item" [routerLink]="['/dashboard']">Dashboard</a>
             </li>
             <li>
               <hr class="dropdown-divider">
             </li>
             <li>
-              <a class="dropdown-item" href="#">Calculadora</a>
+              <a class="dropdown-item" [routerLink]="['/calculadora']">Calculadora</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Conversor de moedas</a>
+              <a class="dropdown-item" [routerLink]="['/conversor-moedas']">Conversor de moedas</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Gerenciador de tarefas</a>
+              <a class="dropdown-item" [routerLink]="['/tarefas']">Gerenciador de tarefas</a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Jogo da velha</a>
+              <a class="dropdown-item" [routerLink]="['/jogo-da-velha']">Jogo da velha</a>
             </li>
           </ul>
         </li>
@@ -41,6 +41,6 @@
   </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container mt-5">
   <router-outlet></router-outlet>
 </div>

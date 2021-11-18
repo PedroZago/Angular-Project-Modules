@@ -1,0 +1,99 @@
+<div class="container-fluid d-flex justify-content-center">
+
+  <div class="card bg-primary">
+
+    <form class="card-body">
+
+      <h5 class="card-title">Calculadora</h5>
+
+      <div class="row">
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-danger" (click)="limpar()">C</button>
+        </div>
+
+        <div class="col-9 p-1">
+          <input type="text" class="form-control" id="display" name="display" [value]="display" readonly>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btn7" (click)="adicionarNumero('7')">7</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btn8" (click)="adicionarNumero('8')">8</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btn9" (click)="adicionarNumero('9')">9</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-warning" id="btnDivisao" (click)="definirOperacao('/')"><i
+              class="bi bi-slash"></i></button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btn4" (click)="adicionarNumero('4')">4</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btn5" (click)="adicionarNumero('5')">5 </button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btn6" (click)="adicionarNumero('6')">6</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-warning" id="btnMIltiplicacao" (click)="definirOperacao('*')"><i
+              class="bi bi-x"></i></button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btn1" (click)="adicionarNumero('1')">1</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btn2" (click)="adicionarNumero('2')">2</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btn3" (click)="adicionarNumero('3')">3</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-warning" id="btnSubtracao" (click)="definirOperacao('-')"><i
+              class="bi bi-dash"></i></button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btn0" (click)="adicionarNumero('0')">0</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-light" id="btnDecimal" (click)="adicionarNumero('.')">.</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-success" id="btnCalcular" (click)="calcular()">=</button>
+        </div>
+
+        <div class="col-3 p-1">
+          <button type="button" class="btn btn-warning" id="btnSoma" (click)="definirOperacao('+')"><i
+              class="bi bi-plus"></i></button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
